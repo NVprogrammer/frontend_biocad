@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="style.css">
+<div class="analytics-container">
+    <div class="device">
+    <img src="assets/device.svg" alt="" style="height: 40px;width: 40px; margin: 16px;">
+        <div class="device-container">
+            <div class="device-name">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</div>
+            <div class="device-values">
+                <div style="
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.4000000059604645px;
+                text-align: left;
+                color: #00000099;
+                ">S1.4.I14-9.001</div>
+                <div style="
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.4000000059604645px;
+                text-align: left;
+                color: #00000099;
+                ">00-024004</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center;justify-content: flex-end; gap:10px;padding: 8px;">
+            <select class="instrument_main" name="instrument">
+                <option value="working">В работе</option>
+                <option value="off">Выключен</option>
+                <option value="break">Сломан</option>
+            </select>
+            <button style="background:transparent;border:none;"><img src="assets/heart_red.svg" alt=""></button>
+            <button style="background:transparent;border:none;"><img src="assets/settings.svg" alt=""></button>
+        </div>
+    </div>
+
+
+    <div class="work">
+        <select class="instrument" name="instrument">
+            <option value="working">Работа прибора</option>
+            <option value="off">Выключен</option>
+        </select>
+        <div style="display: flex; align-items: center;justify-content: flex-end; gap:24px;margin-left: auto;">
+            <button style="width:40px;height: 40px;border-radius: 4px; border-width: 1px;padding: 8px;color: #0000001F;border: 1px solid #0000001F;background-color: white;
+            "><img src="assets/timer.svg" alt=""></button>
+            <button style="width:px;height: 40px;background:none;border-radius: 4px; border-width: 1px;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 1.25px;
+            text-align: left;
+            color: #23B04A;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ">СОХРАНИТЬ PDF
+            <img src="assets/dots.svg" alt="">    
+        </button>
+        </div>
+    </div>
+
+    <div class="times">
+        <input type="date" class="input-date">
+        <img src="assets/arrow.svg" alt="" srcset="">
+        <input type="date" class="input-date">
+    </div>
+
+    <div class="filters" id="filters">
+        <button class="filter" data-days="1">День</button>
+        <button class="filter" data-days="7">Неделя</button>
+        <button class="filter" data-days="14">2 недели</button>
+        <button class="filter" data-days="30">Месяц</button>
+        <button class="filter" data-days="90">3 месяца</button>
+        <button class="filter" data-days="365">Год</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="table-columns">Начало</th>
+                <th class="table-columns">Тип работ</th>
+                <th class="table-columns">Работы</th>
+                <th class="table-columns">Результат</th>
+                <th class="table-columns">Пользователь</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr>
+                <th>09.10.2021, 15:46</th>
+                <th>В работе <br> Измерение</th>
+                <th> <strong>Образец/серия:</strong> 000100057935_170000010325_0000251849</th>
+                <th></th>
+                <th style="color:#2E9BC2;">morozovava</th>
+            </tr>
+            <tr>
+                <th>12.10.2021, 12:17</th>
+                <th>В работе</th>
+                <th> <strong>Номер колонки: </strong>Колонка 2 <br>
+                    <strong>Образец:</strong> Образец 2 <br>
+                   <strong>Образец:</strong>   образец 1 <br>
+                   <strong>Метод:</strong>  метов тестовый <br>
+                   <strong>Номер колонки:</strong>  Колонка 1</th>
+                <th style="max-width: 140px;">Промывка с указанием вещества: Вещество</th>
+                <th style="color:#2E9BC2;">morozovava</th>
+            </tr>
+            
+        </tbody>
+    </table>
+
+</div>
